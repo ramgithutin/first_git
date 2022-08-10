@@ -12,10 +12,10 @@
 .first{
     display: flex;
     align-items: center;
-    background-color: rgba(119, 119, 119,0.1);
+    background-color: white;
     justify-content: space-between;
-    /*border-bottom: 1px solid rgb(193, 223, 235);
-*/}
+    border-bottom: 1px solid whitesmoke
+}
 .first_left{
     display: flex;
     align-items: center ;
@@ -23,7 +23,7 @@
 .first_left span{
     padding: 10px;
     cursor: pointer;
-}
+}/*size changing*/
 .first_middle{
     display: flex;
     flex: 0.85;
@@ -34,10 +34,11 @@
     border-radius: 5px;
 }
 .material-symbols-outlined{
-    color: gray;
+   color: gray;
 }
 .first_middle input{
     border: none;
+   
     width: 100%;
     padding: 5px;
     outline: none;
@@ -143,6 +144,7 @@ body{
     cursor: pointer;
 
 }
+/*section starting*/
 .section{
     display: flex;
     align-items: center;
@@ -176,4 +178,54 @@ body{
 .section h4{
     font-size: 14px;
     margin-left: 15px;
+}
+.email_row_option{
+    display: flex;
+    align-items: 5px;
+}
+.email_row_option .material-symbols-outlined,
+input{
+    margin: 5px;
+    
+}
+.email_row{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 2px solid whitesmoke;
+    cursor: pointer;
+    z-index: 999;
+
+}
+.email_row:hover{
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0 4px -2px rgba(0,0,0,0.24);
+}
+.email_row_msg{
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+    font-size: 13px;
+}
+.email_row_msg h4{
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.email_row_title{
+    font-size: 13px;
+    flex: 0.3;
+}
+.email_roll_time{
+    padding-right: 10px ;
+    font-size: 10px;
+    font-weight: bold;
+}
+.email_row_descrition{
+    font-weight: 400;
+    color: grey;
 }
